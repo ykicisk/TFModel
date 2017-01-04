@@ -1,0 +1,14 @@
+# path
+src: ts_learning/2010_201606
+dst: result/2010_201606/predict.tsv
+model_path: result/2010_201606/model.ckpt
+model: {name: TestModel, params: {}}
+# learning parameters
+optimizer: {name: GradientDescentOptimizer, params: {learning_rate: 0.01}}
+n_epoch: 50
+batch_size: 100
+# data term
+train_term: 20150101:20150130
+validate_term: 20150201:20150207
+test_term: 20150208:20150215
+# TODO: 途中結果等
